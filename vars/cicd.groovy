@@ -14,5 +14,9 @@ def newGit1(repo)
 {
   git "https://github.com/intelliqittrainings/${repo}.git"
 }
+def runSelenium(jobname)
+{
+  sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar
+} 
 
   
